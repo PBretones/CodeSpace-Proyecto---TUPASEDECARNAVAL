@@ -1,0 +1,234 @@
+[{
+  "_id": {
+    "$oid": "606a7d8ef1d973e752574c8d"
+  },
+  "tipo": "Los Piratas",
+  "year": 1998,
+  "audios": [
+    {
+      "_id": {
+        "$oid": "606a7d7df1d973e752574c8c"
+      },
+      "name": "Presentación",
+      "mp3": "https://app.box.com/s/xat6n9r3tbqbxgp9ufx116zvz3iq7urv",
+      "__v": 0
+    }
+  ],
+  "picture": "http://universogaditano.es/sites/default/files/imagecache/400xY/4%20Los%20Piratas.jpg",
+  "user": {
+    "$oid": "606a7c6ff1d973e752574c8a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a7e99f1d973e752574c93"
+  },
+  "tipo": "Los Piratas",
+  "year": 1998,
+  "audios": [
+    {
+      "_id": {
+        "$oid": "606a7db1f1d973e752574c8f"
+      },
+      "name": "Presentación",
+      "mp3": "https://m.box.com/file/604827977276/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Fqkq3qy11xdv00mb5za138d8i3xbyyh3v",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606a7dc6f1d973e752574c90"
+      },
+      "name": "Pasodoble - Dicen los muy entendios",
+      "mp3": "https://m.box.com/file/604821940937/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Fqkq3qy11xdv00mb5za138d8i3xbyyh3v",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606a7dd8f1d973e752574c91"
+      },
+      "name": "Pasodoble - Como voy a criticarla",
+      "mp3": "https://m.box.com/file/604828764407/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Fqkq3qy11xdv00mb5za138d8i3xbyyh3v",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606a7e82f1d973e752574c92"
+      },
+      "name": "Pasodoble - Era un 4 de diciembre",
+      "mp3": "https://m.box.com/file/795423175634/download",
+      "__v": 0
+    }
+  ],
+  "picture": "http://universogaditano.es/sites/default/files/imagecache/400xY/4%20Los%20Piratas.jpg",
+  "user": {
+    "$oid": "606a7c6ff1d973e752574c8a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606b44a609904932d558f44b"
+  },
+  "tipo": "Los Piratas",
+  "year": 1998,
+  "audios": [
+    {
+      "_id": {
+        "$oid": "606a7db1f1d973e752574c8f"
+      },
+      "name": "Presentación",
+      "mp3": "https://m.box.com/file/604827977276/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Fqkq3qy11xdv00mb5za138d8i3xbyyh3v",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606a7f15f1d973e752574c9c"
+      },
+      "name": "Pasodoble - Me han dicho a mi",
+      "mp3": "https://m.box.com/file/795422684313/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606a7f24f1d973e752574c9d"
+      },
+      "name": "Pasodoble - Con permiso buenas tardes",
+      "mp3": "https://m.box.com/file/795422978916/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af3fdf1d973e752574ca2"
+      },
+      "name": "Cuplé - Entra despacio en el palillero",
+      "mp3": "https://m.box.com/file/795422506827/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af418f1d973e752574ca3"
+      },
+      "name": "Cuplé - De los corrales",
+      "mp3": "https://m.box.com/file/795423369763/download",
+      "__v": 0
+    }
+  ],
+  "picture": "http://universogaditano.es/sites/default/files/imagecache/400xY/4%20Los%20Piratas.jpg",
+  "user": {
+    "$oid": "606b3f2208deeb31998031cf"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606b468efba5db343de69cb9"
+  },
+  "tipo": "Los Piratas",
+  "year": 1998,
+  "audios": [
+    {
+      "_id": {
+        "$oid": "606a7f15f1d973e752574c9c"
+      },
+      "name": "Pasodoble - Me han dicho a mi",
+      "mp3": "https://m.box.com/file/795422684313/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606a7f24f1d973e752574c9d"
+      },
+      "name": "Pasodoble - Con permiso buenas tardes",
+      "mp3": "https://m.box.com/file/795422978916/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af396f1d973e752574c9e"
+      },
+      "name": "Cuplé - Mi Cai gueno",
+      "mp3": "https://m.box.com/file/795420415407/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af418f1d973e752574ca3"
+      },
+      "name": "Cuplé - De los corrales",
+      "mp3": "https://m.box.com/file/795423369763/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af3fdf1d973e752574ca2"
+      },
+      "name": "Cuplé - Entra despacio en el palillero",
+      "mp3": "https://m.box.com/file/795422506827/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af3eaf1d973e752574ca1"
+      },
+      "name": "Cuplé - El santo padre",
+      "mp3": "https://m.box.com/file/795421894578/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af3d9f1d973e752574ca0"
+      },
+      "name": "Cuplé - La infanta Elena",
+      "mp3": "https://m.box.com/file/795421134608/download",
+      "__v": 0
+    }
+  ],
+  "picture": "http://universogaditano.es/sites/default/files/imagecache/400xY/4%20Los%20Piratas.jpg",
+  "user": {
+    "$oid": "606b467efba5db343de69cb8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606b772801bd554c36306bf5"
+  },
+  "tipo": "Los Piratas",
+  "year": 1998,
+  "audios": [
+    {
+      "_id": {
+        "$oid": "606a7f15f1d973e752574c9c"
+      },
+      "name": "Pasodoble - Me han dicho a mi",
+      "mp3": "https://m.box.com/file/795422684313/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606a7f24f1d973e752574c9d"
+      },
+      "name": "Pasodoble - Con permiso buenas tardes",
+      "mp3": "https://m.box.com/file/795422978916/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af396f1d973e752574c9e"
+      },
+      "name": "Cuplé - Mi Cai gueno",
+      "mp3": "https://m.box.com/file/795420415407/download",
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "606af418f1d973e752574ca3"
+      },
+      "name": "Cuplé - De los corrales",
+      "mp3": "https://m.box.com/file/795423369763/download",
+      "__v": 0
+    }
+  ],
+  "picture": "http://universogaditano.es/sites/default/files/imagecache/400xY/4%20Los%20Piratas.jpg",
+  "user": {
+    "$oid": "606b467efba5db343de69cb8"
+  },
+  "__v": 0
+}]

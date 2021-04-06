@@ -1,0 +1,284 @@
+[{
+  "_id": {
+    "$oid": "60520cc079111a4020cadbf2"
+  },
+  "name": "Los Piratas",
+  "year": 1998,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "http://universogaditano.es/sites/default/files/imagecache/400xY/4%20Los%20Piratas.jpg",
+  "final": false,
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60520cd379111a4020cadbf3"
+  },
+  "name": "Los Miserables",
+  "year": 1993,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://www.diariodecadiz.es/2021/01/23/diario_del_carnaval/comparsa-miserables-Antonio-Martinez-Ares_1540656517_131731782_667x375.jpg",
+  "final": false,
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60520cee79111a4020cadbf4"
+  },
+  "name": "Los Carnívales",
+  "year": 2019,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://pbs.twimg.com/media/EjE0nzqWkAIsVQT?format=jpg&name=small",
+  "final": false,
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6067d28325f135651b324913"
+  },
+  "name": "Los Enteraos",
+  "year": 2009,
+  "author": {
+    "$oid": "6051071c79b6a8875392b39d"
+  },
+  "picture": "https://d17umfmk0e27oh.cloudfront.net/articulos/articulos-15424.jpg",
+  "modalidad": {
+    "$oid": "605103d779b6a8875392b396"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a4e58f1d973e752574c63"
+  },
+  "name": "Sonri-sillas",
+  "year": 1990,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://i1.wp.com/carnavaleame.teleame.com/wp-content/uploads/2016/03/0-12.jpg?fit=480%2C360&ssl=1",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a4eebf1d973e752574c64"
+  },
+  "name": "Calabaza",
+  "year": 1991,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://www.diariodecadiz.es/2021/02/04/diario_del_carnaval/comparsa-Calabazas_1544256091_133775941_1200x675.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a5044f1d973e752574c65"
+  },
+  "name": "Doremifasoleando",
+  "year": 1992,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://www.elbuscadordelfalla.com/documentos/agrupaciones/DO-RE-MI-FASOLEANDO.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a50b6f1d973e752574c66"
+  },
+  "name": "La Ventolera",
+  "year": 1994,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://www.elbuscadordelfalla.com/documentos/agrupaciones/1994la-ventolera.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a515ff1d973e752574c67"
+  },
+  "name": "El Brujo",
+  "year": 1995,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://compasgaditano.com/wp-content/uploads/2020/07/1995eL-BRUJO1.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a5262f1d973e752574c68"
+  },
+  "name": "La Trinchera",
+  "year": 1996,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://www.elbuscadordelfalla.com/documentos/agrupaciones/1996La-Trinchera2.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a52f5f1d973e752574c69"
+  },
+  "name": "El Vapor",
+  "year": 1997,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://www.diariodecadiz.es/2021/04/01/diario_del_carnaval/Martinez-Ares-componentes-Vapor-comparsa_1561054159_136521950_1200x675.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a537cf1d973e752574c6a"
+  },
+  "name": "Los Templarios",
+  "year": 1999,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://i.ytimg.com/vi/yXk7Eu9jG-Y/maxresdefault.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a5444f1d973e752574c6b"
+  },
+  "name": "La Milagrosa",
+  "year": 2000,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://i.ytimg.com/vi/0fpcBr7vy60/sddefault.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a5560f1d973e752574c6d"
+  },
+  "name": "La niña de mis ojos",
+  "year": 2001,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://i.ibb.co/SmXBsKQ/La-ni-a-de-mis-ojos.webp",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a55cff1d973e752574c6e"
+  },
+  "name": "La Revolución",
+  "year": 2002,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://i.ytimg.com/vi/A9FnGJ9nsDY/hqdefault.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a56f4f1d973e752574c6f"
+  },
+  "name": "Calle de la Mar",
+  "year": 2003,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://i.ytimg.com/vi/Pe-bq02pCOI/maxresdefault.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a5795f1d973e752574c70"
+  },
+  "name": "Los Cobardes",
+  "year": 2016,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://elcorreoweb.es/documents/10157/0/675x450/0c25/675d400/none/10703/GKIA/image_content_17669040_20160206114604.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a5811f1d973e752574c71"
+  },
+  "name": "La Eternidad",
+  "year": 2017,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://carnaval.lavozdigital.es/wp-content/uploads/sites/15/2017/11/aLaeternidad_1(5).jpeg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a58acf1d973e752574c72"
+  },
+  "name": "El Perro Andalú",
+  "year": 2017,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://www.diariodecadiz.es/2018/02/04/andalucia/comparsa-perro-andalu-Martinez-Ares_1215488598_80442394_667x375.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606a5949f1d973e752574c73"
+  },
+  "name": "La Chusma Selecta",
+  "year": 2020,
+  "author": {
+    "$oid": "605105c479b6a8875392b399"
+  },
+  "picture": "https://www.diariodecadiz.es/2020/01/31/diario_del_carnaval/Comparsa-chusma-selecta_1433266702_116125546_667x375.jpg",
+  "modalidad": {
+    "$oid": "605103d279b6a8875392b395"
+  },
+  "__v": 0
+}]

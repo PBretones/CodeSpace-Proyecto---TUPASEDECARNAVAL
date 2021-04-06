@@ -1,0 +1,204 @@
+[{
+  "_id": {
+    "$oid": "606a7c6ff1d973e752574c8a"
+  },
+  "fav": [
+    {
+      "_id": "606a7d7df1d973e752574c8c",
+      "name": "Presentación",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://app.box.com/s/xat6n9r3tbqbxgp9ufx116zvz3iq7urv",
+      "active": false
+    },
+    {
+      "_id": "606a7db1f1d973e752574c8f",
+      "name": "Presentación",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/604827977276/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Fqkq3qy11xdv00mb5za138d8i3xbyyh3v",
+      "active": false
+    },
+    {
+      "_id": "606a7dc6f1d973e752574c90",
+      "name": "Pasodoble - Dicen los muy entendios",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/604821940937/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Fqkq3qy11xdv00mb5za138d8i3xbyyh3v",
+      "active": false
+    },
+    {
+      "_id": "606a7dd8f1d973e752574c91",
+      "name": "Pasodoble - Como voy a criticarla",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/604828764407/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Fqkq3qy11xdv00mb5za138d8i3xbyyh3v",
+      "active": false
+    },
+    {
+      "_id": "606a7e82f1d973e752574c92",
+      "name": "Pasodoble - Era un 4 de diciembre",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795423175634/download",
+      "active": false
+    }
+  ],
+  "avatar": "",
+  "username": "linkedIn",
+  "email": "link@edin.com",
+  "password": "$2b$10$rWq1LybmstuR.TpGJhMl/eFEOmJ9m2BhL8SnkzKWPhJ1P8SJqLUz.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606b21b89eba5d1dbd84a60e"
+  },
+  "fav": [],
+  "avatar": "",
+  "username": "asd",
+  "email": "asd@gpf.com",
+  "password": "$2b$10$vEl/Qi5CtUmIZuT/uhaLqe3dpLar1xft3NyLFD1WjsfI9VlVzF6/O",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606b3ee508deeb31998031ce"
+  },
+  "fav": [],
+  "avatar": "",
+  "username": "Iri",
+  "email": "iri@gmail.com",
+  "salt": "787779d0-962e-11eb-b73b-e95861258728",
+  "hashedPassword": "04981e8ce04c6419af8d9a1823e9f6d92d0be7ce",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606b3f2208deeb31998031cf"
+  },
+  "fav": [
+    {
+      "_id": "606a7db1f1d973e752574c8f",
+      "name": "Presentación",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/604827977276/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Fqkq3qy11xdv00mb5za138d8i3xbyyh3v",
+      "active": false
+    },
+    {
+      "_id": "606a7f15f1d973e752574c9c",
+      "name": "Pasodoble - Me han dicho a mi",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795422684313/download",
+      "active": false
+    },
+    {
+      "_id": "606a7f24f1d973e752574c9d",
+      "name": "Pasodoble - Con permiso buenas tardes",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795422978916/download",
+      "active": false
+    },
+    {
+      "_id": "606af3fdf1d973e752574ca2",
+      "name": "Cuplé - Entra despacio en el palillero",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795422506827/download",
+      "active": false
+    },
+    {
+      "_id": "606af418f1d973e752574ca3",
+      "name": "Cuplé - De los corrales",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795423369763/download",
+      "active": false
+    }
+  ],
+  "avatar": "",
+  "username": "hola",
+  "email": "hola@gmail.com",
+  "salt": "9c9a9310-962e-11eb-b73b-e95861258728",
+  "hashedPassword": "dd89e899e60af15e69842f1ff566eb5096962048",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "606b467efba5db343de69cb8"
+  },
+  "fav": [
+    {
+      "_id": "606a7f15f1d973e752574c9c",
+      "name": "Pasodoble - Me han dicho a mi",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795422684313/download",
+      "active": false
+    },
+    {
+      "_id": "606a7f24f1d973e752574c9d",
+      "name": "Pasodoble - Con permiso buenas tardes",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795422978916/download",
+      "active": false
+    },
+    {
+      "_id": "606af396f1d973e752574c9e",
+      "name": "Cuplé - Mi Cai gueno",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795420415407/download",
+      "active": false
+    },
+    {
+      "_id": "606af418f1d973e752574ca3",
+      "name": "Cuplé - De los corrales",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795423369763/download",
+      "active": false
+    },
+    {
+      "_id": "606af3fdf1d973e752574ca2",
+      "name": "Cuplé - Entra despacio en el palillero",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795422506827/download",
+      "active": false
+    },
+    {
+      "_id": "606af3eaf1d973e752574ca1",
+      "name": "Cuplé - El santo padre",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795421894578/download",
+      "active": false
+    },
+    {
+      "_id": "606af3d9f1d973e752574ca0",
+      "name": "Cuplé - La infanta Elena",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795421134608/download",
+      "active": false
+    },
+    {
+      "_id": "606a7f15f1d973e752574c9c",
+      "name": "Pasodoble - Me han dicho a mi",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795422684313/download",
+      "active": false
+    },
+    {
+      "_id": "606a7f24f1d973e752574c9d",
+      "name": "Pasodoble - Con permiso buenas tardes",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795422978916/download",
+      "active": false
+    },
+    {
+      "_id": "606af396f1d973e752574c9e",
+      "name": "Cuplé - Mi Cai gueno",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795420415407/download",
+      "active": false
+    },
+    {
+      "_id": "606af418f1d973e752574ca3",
+      "name": "Cuplé - De los corrales",
+      "tipo": "60520cc079111a4020cadbf2",
+      "mp3": "https://m.box.com/file/795423369763/download",
+      "active": false
+    }
+  ],
+  "avatar": "",
+  "username": "PBretones",
+  "email": "tester@test.com",
+  "salt": "ffc369e0-9632-11eb-bedd-bb9f1727e3d1",
+  "hashedPassword": "b56993a170deb95ee1419d7cbe6d658489275b9d",
+  "__v": 0
+}]
