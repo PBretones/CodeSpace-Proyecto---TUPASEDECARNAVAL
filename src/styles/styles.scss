@@ -239,8 +239,9 @@ a:hover {
 }
 .newsInfo {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+
   margin-top: 25px;
   gap: 100px;
 
@@ -259,9 +260,8 @@ a:hover {
 }
 
 .newsBorder {
-  height: 50%;
+  height: 80%;
   display: flex;
-  margin-top: 25px;
 }
 .newsPic {
   img {
@@ -269,12 +269,12 @@ a:hover {
     border: 6px solid #ffffff;
     filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.45));
     border-radius: 25px;
-    background-size: cover;
+    object-fit: cover;
     background-position: center;
     float: none;
-    margin-bottom: 25px;
-    height: 400px;
-    width: 450px;
+
+    height: 50vh;
+    width: 45vh;
   }
 }
 .newsText {
@@ -479,7 +479,32 @@ a:hover {
     align-items: center;
     width: 50%;
     height: 50%;
+    .userInfo {
+      background-color: #221f2e;
+      width: 80%;
+      gap: 15px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      color: white;
 
+      font-size: 26px;
+      span {
+        color: $mainColor;
+      }
+      .front {
+        img {
+          width: 10vh;
+          border-radius: 50%;
+          height: 10vh;
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+      }
+    }
     .userBack {
       background-color: #221f2e;
       width: 95%;
@@ -595,8 +620,6 @@ a:hover {
 @import "./player";
 
 @import "./library";
-
-@import "./nav";
 
 @import "./author";
 

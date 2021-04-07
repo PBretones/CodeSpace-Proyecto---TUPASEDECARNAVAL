@@ -57,22 +57,6 @@ export const UserRegister = ({ loginHandler }) => {
 
     return (
         <>
-            {/* <div className="loginFirst">
-                <form className="loginForm">
-                    <label htmlFor="username">Apodo</label>
-                    <input value={signUpOK.username} onChange={handleInputs("username")} id="username" type="text" name="username" placeholder="Su Apodo" />
-                    <label htmlFor="email">Email</label>
-                    <input value={signUpOK.email} onChange={handleInputs("email")} id="mail" type="email" name="email" placeholder="Su Email" />
-                    <label htmlFor="password">Password</label>
-                    <input value={signUpOK.password} onChange={handleInputs("password")} id="password" htmlFor="password" type="password" name="password" placeholder="Su Password" />
-                    <div>
-                        <Button variant="contained" onClick={signUpSubmit} color="primary">Registrarse</Button>
-                        <ToastContainer />
-                    </div>
-                </form>
-            </div> */}
-
-
             <form className="loginFirst">
                 <div className="loginInputs">
                     <div className="everyInput">

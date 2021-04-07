@@ -15,7 +15,7 @@ export const PlaylistTrack = ({ pases }) => {
 
         if (localStorage.getItem("audios") && localStorage.getItem("audios") != [""]) {
             const checked = localNow.find(element => element.tipos === pases.tipo);
-            console.log(checked);
+
 
             if (checked === undefined) {
                 const inputValue = false;
@@ -70,7 +70,7 @@ export const PlaylistTrack = ({ pases }) => {
         const Local = JSON.parse(localStorage.getItem("audios"));
         const newLocal = Local.filter(elem => elem.tipos != tipoId);
 
-        console.log(newLocal);
+
         return localStorage.setItem("audios", JSON.stringify(newLocal));
     }
 
@@ -86,14 +86,13 @@ export const PlaylistTrack = ({ pases }) => {
 
     }
     const userId = isAuth().user._id;
-    const deleteOnePase = () => {
-        deletePase(pases._id)
-            .then((response) => console.log(response))
-            .catch((error) => console.log(error));
+    /*  const deleteOnePase = (pases) => {
+         deletePase(pases)
+             .then((response) => console.log(response))
+             .catch((error) => console.log(error));
+ 
+     } */
 
-    }
-    console.log(userId);
-    console.log(pases._id);
     return (
         <div className="customContainer">
             <div className="customPase">
@@ -101,7 +100,7 @@ export const PlaylistTrack = ({ pases }) => {
                 <div className="imgBox">
                     <div className="card">
                         <div className="front"><img src={pases.picture} alt={pases.tipo} className="center" /></div>
-                        <div className="back"><FontAwesomeIcon icon={faTimes} size="3x" className="deleteButton" onClick={deleteOnePase} /></div>
+                        <div className="back"><FontAwesomeIcon icon={faTimes} size="3x" className="deleteButton" /* onClick={deleteOnePase} */ /></div>
                     </div>
                 </div>
                 <div className="infoBox">

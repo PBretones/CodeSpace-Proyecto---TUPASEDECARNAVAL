@@ -11,10 +11,21 @@ const newsSchema = new mongoose.Schema({
         type: String,
 
     },
-    body: {
+    bodyA: {
         type: String,
         unique: true,
         required: true
+    },
+    bodyB: {
+        type: String,
+        unique: true,
+        default: ""
+
+    },
+    bodyC: {
+        type: String,
+        unique: true,
+        default: ""
     },
     picture: {
         type: String

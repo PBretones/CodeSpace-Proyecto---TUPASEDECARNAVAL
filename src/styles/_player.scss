@@ -1,10 +1,31 @@
 .tester {
+  .myNav {
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+
+    top: 0;
+
+    button {
+      margin-right: 1rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: white;
+      padding: 0.5rem;
+      transition: all 0.3 ease;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
   height: 60%;
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-radius: 25px;
   min-width: 30vh;
   background: #221f2e;
@@ -17,12 +38,27 @@
     width: 40vh;
     object-fit: cover;
   }
-}
+  .myNav {
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+    max-height: 45vh;
+    position: relative;
+    justify-content: right;
 
-.myNav {
-  width: 100%;
-  display: flex;
-  justify-content: right;
+    button {
+      margin-right: 1rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: white;
+      padding: 0.5rem;
+      transition: all 0.3 ease;
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }
 
 .player {

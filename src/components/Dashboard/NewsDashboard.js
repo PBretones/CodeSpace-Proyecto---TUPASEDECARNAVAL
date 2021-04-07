@@ -9,18 +9,18 @@ export const NewsDashboard = () => {
 
     const [news, setNews] = useState([]);
     const [error, setError] = useState("");
-    const [body, setBody] = useState(1800);
-    const [init, setInit] = useState(0);
+    const [body, setBody] = useState(true);
+    const [init, setInit] = useState(true);
     const handleBody = (value) => {
 
-        if (init === 0 && body === 1800) {
-            value = 3600;
-            setInit(body);
-            setBody(value);
+        if (init === true) {
+
+            setInit(false);
+
         } else {
-            value = 1800;
-            setInit(0);
-            setBody(value)
+
+            setInit(true);
+
         }
     }
 
@@ -86,8 +86,7 @@ export const NewsDashboard = () => {
 
                 <Pagination className="pagination" page={page}
                     onClick={() => {
-                        setInit(0);
-                        setBody(1800);
+                        setInit(true)
                     }}
                     onChange={handleChange} count={5} color="primary" variant="outlined" shape="rounded" classes={{ ul: classes.ul }} />
             </div>
@@ -99,10 +98,11 @@ export const NewsDashboard = () => {
                             <div className="newsText">
                                 <div className="newsTitle">{news.title}</div>
                                 <div className="newsSubtitle">{news.subtitle}</div>
-                                <div id="myBody" className="newsBody">{news.body.substring(init, body)}{init === 0 ? "..." : null}</div>
-
-                                {news.body.length < 500 ? null : <Button onClick={handleBody} className="newsButton">{init <= 0 ? "NEXT" : "BACK"}</Button>}
-
+                                <div id="myBody" className="newsBody">
+                                    {init ? news.bodyA : news.bodyC}
+                                    {init ? news.bodyB : ""}
+                                </div>
+                                {news.bodyC !== "" ? <Button onClick={handleBody} className="newsButton">{init ? "CONTINUAR" : "VOLVER"}</Button> : null}
                             </div>
 
                             <div className="newsBorder">

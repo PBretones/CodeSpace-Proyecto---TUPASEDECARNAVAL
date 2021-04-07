@@ -1,4 +1,3 @@
-import { SearchBox } from './SearchBox';
 import { Tupase } from './Tupase';
 import { Button } from '@material-ui/core';
 import { Audio } from './Audio';
@@ -98,8 +97,6 @@ export const CreatorAudio = () => {
         return localStorage.setItem("audios", JSON.stringify(lastArray));
     };
 
-    console.log(tipoOne);
-
     const postCustomPase = () => {
         const lastArray = [];
         const chosenTipo = tipo.find(tipo => tipo._id === tipoLocation);
@@ -118,7 +115,6 @@ export const CreatorAudio = () => {
             });
             const postData = { tipo: tipoOne.name, year: tipoOne.year, audios: customPase, picture: tipoOne.picture };
 
-            console.log(postData);
             postPase(userId, postData, token)
                 .then((response) => console.log(response))
                 .catch((error) => console.log(error));

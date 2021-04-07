@@ -43,4 +43,4 @@ const custompaseSchema = new mongoose.Schema({
 })
 const Custompase = mongoose.model("Custompase", custompaseSchema);
 
-module.exports = { Custompase, Audiopase }
+module.exports = { Custompase, Audiopase };

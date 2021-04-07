@@ -2,6 +2,7 @@ const express = require('express');
 const { Custompase, Audiopase } = require('../models/customPase');
 
 
+
 exports.createCustomPase = (req, res) => {
 
     req.body.custompase.user = req.profile;
@@ -14,15 +15,30 @@ exports.createCustomPase = (req, res) => {
     })
 
 }
-exports.deleteCustomPase = (req, res, next) => {
 
-    Custompase.findOneAndDelete({ _id: req.custompase._id }).exec((error, data) => {
-        if (error) {
-            return res.status(400).json({ error })
-        }
-        res.json(data)
-    })
-}
+
+exports.deleteCustomPase = (req, res) => {
+    Custompase.findByIdAndRemove(id)
+        .then(data => {
+            if (!data) {
+                res.status(404).send({
+                    message: `Cannot delete Tutorial with id=${id}. Maybe Tutorial was not found!`
+                });
+            } else {
+                res.send({
+                    message: "Tutorial was deleted successfully!"
+                });
+            }
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Could not delete Tutorial with id=" + id
+            });
+        });
+};
+
+
+
 
 exports.showAllPases = (req, res) => {
 
@@ -35,13 +51,13 @@ exports.showAllPases = (req, res) => {
 }
 
 exports.paseById = (req, res, next, id) => {
-    Custompase.findById(id).exec((error, data) => {
-        if (error || !data) {
+    Custompase.findByIdAndDelete(id).exec((error, user) => {
+        if (error || !user) {
             return res.status(400).json({
                 error: "Pase not found",
             });
         }
-        req.profile = data;
+        req.profile = user;
         next();
     });
 }
@@ -50,7 +66,7 @@ exports.paseById = (req, res, next, id) => {
 exports.deletePase = (req, res, next) => {
     let pase = req.custompase;
     console.log(pase);
-    pase.remove((error,) => {
+    pase.remove((error) => {
         if (error) {
             return res.status(400).json({
                 error,

@@ -18,7 +18,7 @@ export const Sidebar = () => {
         localStorage.removeItem("jwt");
         history.push("/");
         setIsLogged({});
-        console.log(localStorage.getItem("audios"));
+
         localStorage.removeItem("audios");
     }
     const Location = useLocation().pathname.split("/")[2];

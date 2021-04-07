@@ -14,7 +14,7 @@ exports.signUp = (req, res) => {
         }
         if (userDB) {
             return res.status(400).json({
-                message: "User already exists"
+                message: "El usuario ya existe"
             })
         }
         const user = new User(req.body);
@@ -43,12 +43,12 @@ exports.logIn = (req, res) => {
     User.findOne({ email }).exec((error, userDB) => {
         if (error || !userDB) {
             return res.status(400).json({
-                error: "Email doesn't exist",
+                error: "El usuario no existe",
             });
         }
         if (!userDB.authenticate(password)) {
             return res.status(401).json({
-                error: "Email and password don't match",
+                error: "Email o contraseña incorrectos",
             });
         }
         const token = jwt.sign({

@@ -47,7 +47,6 @@ export const Audio = ({ audio, customPase }) => {
             ReaddAudio(audio);
             setCheckAudio(false);
         }
-        console.log(customPase);
     }
 
     return (

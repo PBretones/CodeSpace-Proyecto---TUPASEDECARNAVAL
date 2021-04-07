@@ -13,6 +13,8 @@ export const UserDashboard = ({ match }) => {
     const [error, setError] = useState("");
     const [userPases, setUserPases] = useState({});
     const history = useHistory();
+    const userLocation = useLocation().pathname.split("/")[2];
+    const [userAvatar, setUserAvatar] = useState("https://img.favpng.com/23/19/12/computer-icons-service-avatar-user-guest-house-png-favpng-PTrV80NVh76XFkPjAeQLF29is.jpg");
 
 
 
@@ -57,16 +59,24 @@ export const UserDashboard = ({ match }) => {
                         ...userData,
                         username: data.username,
                         email: data.email,
-                        avatar: data.avatar
+                        avatar: data.avatar,
+                        fav: data.fav
                     })
                 }
             }))
-    }
 
+    }
     useEffect(() => {
         showUserInfo(match.params.userId)
         getPases()
+
     }, [])
+    const myAvatar = () => {
+        const myNewAvatar = userPases.filter(pases => pases.user === userLocation);
+        setUserAvatar(myNewAvatar[0].picture);
+
+    }
+
 
     const profileHandler = () => {
         if (profile != true) {
@@ -86,8 +96,9 @@ export const UserDashboard = ({ match }) => {
         }
 
     }
-    const userLocation = useLocation().pathname.split("/")[2];
+
     const emptyList = () => {
+
 
         const isEmpty = userPases.filter(elem => elem.user === userLocation);
         return isEmpty.length;
@@ -95,6 +106,7 @@ export const UserDashboard = ({ match }) => {
     const startCreation = () => {
         history.push('/creator');
     }
+
 
     return (
         <>
@@ -107,10 +119,12 @@ export const UserDashboard = ({ match }) => {
                             </div>}
                             {profile && <div className={`userBack ${profile && 'openProfile'}`}>
                                 <p onClick={profileHandler}><span className="paseSide">TU</span><span className="carnavalSide">PERFIL</span></p>
-
-                                <div>Apodo:{user.username}</div>
-                                <div>Email:{user.email}</div>
-                                <div>Avatar:{user.avatar}</div>
+                                <div className="userInfo">
+                                    <div className="front"><img src={userAvatar} alt="GUEST" /></div>
+                                    <div>Apodo: <span>{user.username}</span></div>
+                                    <div>Email: <span>{user.email}</span></div>
+                                </div>
+                                {emptyList() > 0 ? "" : <div className="userAvatar">Crea tu primer pase para conseguir tu avatar personalizado</div>}
                                 <FontAwesomeIcon onClick={profileHandler} icon={faArrowAltCircleUp} className="closeButton" /></div>}
                         </div>
 
@@ -129,7 +143,6 @@ export const UserDashboard = ({ match }) => {
 
                                 </>
                                 }
-
                                 <FontAwesomeIcon onClick={listHandler} icon={faArrowAltCircleUp} className="closeButton" />
                             </div>
                             }

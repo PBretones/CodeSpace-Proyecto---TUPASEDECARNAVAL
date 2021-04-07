@@ -148,7 +148,7 @@ export const postPase = (userId, postData, token) => {
             console.log(error);
         });
 }
-
+/*
 export const deletePase = (paseId) => {
     return fetch(`http://localhost:3002/api/customPase/${paseId}`, {
         method: "DELETE",
@@ -161,4 +161,4 @@ export const deletePase = (paseId) => {
             return response.json();
         })
         .catch((error) => console.log(error));
-};
+}; */

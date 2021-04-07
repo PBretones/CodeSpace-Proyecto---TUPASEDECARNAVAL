@@ -29,7 +29,7 @@ export const SearchBox = () => {
     useEffect(() => {
         getData()
     }, [])
-    console.log(getData());
+
     return (
         <div>
 

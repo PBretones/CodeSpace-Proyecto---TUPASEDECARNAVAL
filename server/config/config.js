@@ -13,4 +13,4 @@ process.env.SEED = "this is a secret code";
 // TOKEN EXPIRY
 //===================
 
-process.env.TOKEN_EXPIRY = process.env.TOKEN_EXPIRY || "1h"
+process.env.TOKEN_EXPIRY = process.env.TOKEN_EXPIRY || "2h"
