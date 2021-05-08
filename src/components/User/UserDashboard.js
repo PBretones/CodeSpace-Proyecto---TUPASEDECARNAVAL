@@ -12,6 +12,7 @@ export const UserDashboard = ({ match }) => {
     const { user, token } = isAuth();
     const [error, setError] = useState("");
     const [userPases, setUserPases] = useState({});
+    const [refresh, setRefresh] = useState(false);
     const history = useHistory();
     const userLocation = useLocation().pathname.split("/")[2];
     const [userAvatar, setUserAvatar] = useState("https://img.favpng.com/23/19/12/computer-icons-service-avatar-user-guest-house-png-favpng-PTrV80NVh76XFkPjAeQLF29is.jpg");
@@ -66,19 +67,27 @@ export const UserDashboard = ({ match }) => {
             }))
 
     }
+
     useEffect(() => {
         showUserInfo(match.params.userId)
         getPases()
 
-    }, [])
-    const myAvatar = () => {
-        const myNewAvatar = userPases.filter(pases => pases.user === userLocation);
-        setUserAvatar(myNewAvatar[0].picture);
 
+    }, [refresh])
+
+    const emptyList = () => {
+
+
+        const isEmpty = userPases.filter(elem => elem.user === userLocation);
+        return isEmpty.length;
     }
 
 
     const profileHandler = () => {
+        if (emptyList() > 0) {
+            const myNewAvatar = userPases.filter(pases => pases.user === userLocation);
+            setUserAvatar(myNewAvatar[0].picture)
+        } else { setUserAvatar("https://img.favpng.com/23/19/12/computer-icons-service-avatar-user-guest-house-png-favpng-PTrV80NVh76XFkPjAeQLF29is.jpg") }
         if (profile != true) {
             setProfile(true)
             setList(false)
@@ -88,6 +97,7 @@ export const UserDashboard = ({ match }) => {
         }
     }
     const listHandler = () => {
+
         if (list != true) {
             setList(true)
             setProfile(false)
@@ -97,16 +107,14 @@ export const UserDashboard = ({ match }) => {
 
     }
 
-    const emptyList = () => {
 
-
-        const isEmpty = userPases.filter(elem => elem.user === userLocation);
-        return isEmpty.length;
-    }
     const startCreation = () => {
         history.push('/creator');
     }
+    const myAvatar = () => {
 
+
+    }
 
     return (
         <>
@@ -134,8 +142,8 @@ export const UserDashboard = ({ match }) => {
                             </div>}
                             {list && <div className={`userBack ${list && 'openProfile'}`}>
                                 <p onClick={listHandler}><span className="paseSide">TU</span><span className="carnavalSide">LISTA</span></p>
-                                {emptyList() > 0 ? <div className="customPaseFilter">{userPases.filter(pases => pases.user === userLocation).map(pases =>
-                                    <PlaylistTrack pases={pases} />
+                                {emptyList() > 0 ? <div className="customPaseFilter" >{userPases.filter(pases => pases.user === userLocation).map(pases =>
+                                    <PlaylistTrack refresh={refresh} setRefresh={setRefresh} pases={pases} />
                                 )}</div> : <>
                                     <div className="customPaseEmpty"><FontAwesomeIcon size="3x" icon={faTheaterMasks} /><div>Aún no tienes ningún pase de Carnaval.</div>
                                         <div><Button onClick={startCreation} variant="contained" size="large" color="primary">CREAR</Button></div>

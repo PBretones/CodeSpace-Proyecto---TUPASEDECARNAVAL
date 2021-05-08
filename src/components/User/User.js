@@ -37,8 +37,8 @@ export const UserUnknown = () => {
                     {register ? <UserRegister loginHandler={loginHandler} /> : ""}
 
                     {start && <div className="loginButtons">
-                        <Button onClick={registerHandler} variant="containedSecondary" color="secondary">Registrarse</Button>
-                        <Button onClick={loginHandler} variant="containedSecondary" color="secondary">Iniciar sesión</Button>
+                        <Button onClick={registerHandler} variant="contained" color="secondary">Registrarse</Button>
+                        <Button onClick={loginHandler} variant="contained" color="secondary">Iniciar sesión</Button>
                     </div>}
                 </div>
             </div>

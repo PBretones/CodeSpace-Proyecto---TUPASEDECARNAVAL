@@ -52,12 +52,13 @@ export const MusicPlayer = () => {
         await setCurrentSong(songs[(currentIndex + 1) % songs.length])
         if (isPlaying) { audioRef.current.play() }
     }
+    console.log(currentSong.mp3);
     return (
         <div className="tester">
             <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
             <Song currentSong={currentSong} />
             <Player setSongs={setSongs} setCurrentSong={setCurrentSong} songs={songs} currentSong={currentSong} setSongInfo={setSongInfo} songInfo={songInfo} audioRef={audioRef} setIsPlaying={setIsPlaying} isPlaying={isPlaying} currentSong={currentSong} ></Player>
-            <Library libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} setSongs={setSongs} isPlaying={isPlaying} audioRef={audioRef} songs={songs} setCurrentSong={setCurrentSong} />
+            <Library currentSong={currentSong} libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} setSongs={setSongs} isPlaying={isPlaying} audioRef={audioRef} songs={songs} setCurrentSong={setCurrentSong} />
             {currentSong && <audio onEnded={songEndHandler} onLoadedMetadata={timeUpdateHandler} onTimeUpdate={timeUpdateHandler} ref={audioRef} src={currentSong.mp3}></audio>}
         </div>
     );

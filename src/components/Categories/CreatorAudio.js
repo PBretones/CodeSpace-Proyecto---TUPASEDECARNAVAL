@@ -124,6 +124,7 @@ export const CreatorAudio = () => {
         }
         else {
             alert("ERROR")
+            history.push(`/user/${user._id}`)
         };
     }
 

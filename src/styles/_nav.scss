@@ -1,0 +1,21 @@
+.myNav {
+  min-height: 5vh;
+  width: 100%;
+  display: flex;
+  max-height: 45vh;
+  position: relative;
+  justify-content: right;
+
+  button {
+    margin-right: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    transition: all 0.3 ease;
+    &:hover {
+      color: white;
+    }
+  }
+}

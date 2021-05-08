@@ -1,7 +1,7 @@
 const express = require('express');
 
 const router = express.Router();
-const { Custompase, Audiopase } = require('../models/customPase');
+
 const { signUp, logIn, showUser, showOneUser } = require('../controllers/userController');
 const { createCustomPase, showAllPases, deleteCustomPase, paseById } = require('../controllers/customPaseController');
 const { userById, isAuth, requireSignIn, userFav } = require('../middleware/auth');
@@ -18,7 +18,7 @@ router.post('/customPase/:userId', requireSignIn, isAuth, userFav, createCustomP
 router.delete('/customPase/:customId', deleteCustomPase);
 
 router.param('userId', userById);
-router.param('customId', paseById);
+/* router.param('customId', paseById); */
 
 module.exports = router;
 

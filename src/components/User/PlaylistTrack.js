@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { isAuth, deletePase } from '../../helpers';
+import { useLocation, useHistory } from 'react-router-dom';
 
-export const PlaylistTrack = ({ pases }) => {
+export const PlaylistTrack = ({ pases, refresh, setRefresh }) => {
     const [loadPase, setLoadPase] = useState("");
     const [trackToggle, setTrackToggle] = useState(false);
     const localNow = JSON.parse(localStorage.getItem("audios"));
     const { user, token } = isAuth();
-
+    const history = useHistory();
 
 
     const checkStatus = () => {
@@ -70,7 +71,6 @@ export const PlaylistTrack = ({ pases }) => {
         const Local = JSON.parse(localStorage.getItem("audios"));
         const newLocal = Local.filter(elem => elem.tipos != tipoId);
 
-
         return localStorage.setItem("audios", JSON.stringify(newLocal));
     }
 
@@ -86,12 +86,12 @@ export const PlaylistTrack = ({ pases }) => {
 
     }
     const userId = isAuth().user._id;
-    /*  const deleteOnePase = (pases) => {
-         deletePase(pases)
-             .then((response) => console.log(response))
-             .catch((error) => console.log(error));
- 
-     } */
+    const deleteOnePase = (paseId) => {
+        deletePase(paseId)
+            .then((response) => console.log(response))
+            .catch((error) => console.log(error));
+        setRefresh(!refresh);
+    }
 
     return (
         <div className="customContainer">
@@ -100,7 +100,7 @@ export const PlaylistTrack = ({ pases }) => {
                 <div className="imgBox">
                     <div className="card">
                         <div className="front"><img src={pases.picture} alt={pases.tipo} className="center" /></div>
-                        <div className="back"><FontAwesomeIcon icon={faTimes} size="3x" className="deleteButton" /* onClick={deleteOnePase} */ /></div>
+                        <div className="back"><FontAwesomeIcon icon={faTimes} size="3x" className="deleteButton" onClick={() => deleteOnePase(pases._id)} /></div>
                     </div>
                 </div>
                 <div className="infoBox">
